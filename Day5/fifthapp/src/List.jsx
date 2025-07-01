@@ -41,18 +41,28 @@ export default function List() {
   const evennumbers = numbers.filter((num) => num % 2 == 0);
   console.log(evennumbers);
 
+  //   return (
+  //     <>
+  //       <ul>
+  //         {fruits.map((friuts) => {
+  //           return <li>{friuts}</li>;
+  //         })}
+  //       </ul>
+  //       <ul>
+  //         {evennumbers.map((numbers) => (
+  //           <li>{numbers}</li>
+  //         ))}
+  //       </ul>
+  //     </>
+  //   );
+
   return (
-    <>
-      <ul>
-        {fruits.map((friuts) => {
-          return <li>{friuts}</li>;
-        })}
-      </ul>
-      <ul>
-        {evennumbers.map((numbers) => (
-          <li>{numbers}</li>
-        ))}
-      </ul>
-    </>
-  );
+    <ul>
+      {numbers.map((n, index) => (
+        <li key={index}>
+          Index={index}, Value={n}
+        </li>
+      ))}
+    </ul>
+  )
 }

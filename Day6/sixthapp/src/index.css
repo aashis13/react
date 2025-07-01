@@ -1,0 +1,94 @@
+* {
+
+  color: rgb(0, 0, 0);
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  /* border: none; */
+
+}
+
+body {
+  background-color: rgb(253, 136, 69);
+}
+
+#searchh {
+  margin-left: 15%;
+}
+
+#inputt {
+  border: none;
+  color: none;
+  /*   */
+  height: 25px;
+
+}
+
+/* #button {
+  border-radius: 50px;
+  background-color: blue;
+  color: aquamarine;
+  cursor: pointer;
+  height: 30px;
+  margin-left: 10px;
+} */
+
+
+.Totalbox {
+  margin-top: 3%;
+  border: 1px none rgba(46, 45, 45, 0.534);
+  border-radius: 30px;
+  /* width: 400px; */
+  /* margin-left: 35.5%; */
+  gap: 25px;
+  display: flex;
+}
+
+.eachBorder {
+  background-color: rgba(54, 50, 50, 0.247);
+  /* border: 2px solid whitesmoke; */
+  border-radius: 30px;
+  width: 400px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.image {
+  /* border: 3px solid white; */
+  width: 220px;
+  height: 220px;
+  /* border-radius: 30px; */
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#selection {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(62, 11, 245);
+  color: rgb(0, 239, 247);
+  font-size: large;
+  border: none;
+  text-align: center;
+  margin-left: 1%;
+  cursor: pointer;
+}
+
+#selectionDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}

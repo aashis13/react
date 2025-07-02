@@ -57,17 +57,16 @@ export function Product() {
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
-    setText(""); 
+    setText("");
   };
   const handleSerach = (value) => {
     setText(value);
   };
 
-  
-  const filteredByCategory = selectedCategory === "all"
-    ? Things
-    : Things.filter((item) => item.category === selectedCategory);
-
+  const filteredByCategory =
+    selectedCategory === "all"
+      ? Things
+      : Things.filter((item) => item.category === selectedCategory);
 
   const yooo = selectedtext
     ? filteredByCategory.filter((item) =>
@@ -120,7 +119,10 @@ export function Product() {
             </div>
           ))
         ) : (
-          <div style={{ padding: "1rem", color: " white" }}> item not found</div>
+          <div style={{ padding: "1rem", color: " white" }}>
+            {" "}
+            Item not found
+          </div>
         )}
       </div>
     </>

@@ -1,8 +1,10 @@
 import { Product } from "./Cart";
 export default App;
 
-function App(){
-return<>
-<Product/>
-</>
+function App() {
+  return (
+    <>
+      <Product />
+    </>
+  );
 }

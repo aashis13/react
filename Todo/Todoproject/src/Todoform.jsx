@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { TodoList } from "./TodoList";
 
 export function TodoForm() {
   const [todotext, setTodo] = useState("");
@@ -13,8 +12,8 @@ export function TodoForm() {
   function addTodo() {
     if (todotext.trim() !== "") {
       if (editIndex !== null) {
-        const updatedTodos = todos.map((todo, idx) =>
-          idx === editIndex ? todotext : todo
+        const updatedTodos = todos.map((todo, index) =>
+          index === editIndex ? todotext : todo
         );
         setTodos(updatedTodos);
         setEditIndex(null);
@@ -45,10 +44,10 @@ export function TodoForm() {
         {editIndex !== null ? "Update Todo" : "Add Todo"}
       </button>
       <ul>
-        {todos.map((todo, idx) => (
-          <li key={idx}>
-            {todo} <button onClick={() => editTodo(idx)}>Edit</button>{" "}
-            <button onClick={() => deleteTodo(idx)}>Delete</button>
+        {todos.map((todo, index) => (
+          <li key={index}>
+            {todo} <button onClick={() => editTodo(index)}>Edit</button>{" "}
+            <button onClick={() => deleteTodo(index)}>Delete</button>
           </li>
         ))}
       </ul>

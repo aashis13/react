@@ -1,11 +1,9 @@
-export function TodoList({ doing=[], onDelete }) {
+export function TodoList({ doing = [], onDelete }) {
   return (
     <>
       <ul>
-        {doing.map((item, index) => (
-          <li key={index}>
-            {item} <button onClick={() => onDelete(index)}>❌</button>
-          </li>
+        {doing.map((index) => (
+          <li key={index}></li>
         ))}
       </ul>
     </>

@@ -107,7 +107,7 @@ export function Arrow() {
             width: CELL_SIZE,
             height: CELL_SIZE,
             background: "aqua",
-            borderRadius: "20px",
+            borderRadius: "10px",
           }}
         ></div>
         {snake.map((seg, idx) => (
